@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #D9ABAB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.quiz-container {
+    background: #C75B7A;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Maximum width for larger screens */
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+h3{
+    margin-bottom:2rem;
+
+}
+
+.question-container {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.option {
+    background-color: #6C48C5;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1em;
+}
+
+.option:hover {
+    background-color: #7d4e9a;
+}
+
+#next-btn {
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    font-size: 1em;
+}
+
+#next-btn:hover {
+    background-color: #45a049;
+}
+
+#score {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+#feedback {
+    font-size: 1.2em;
+    margin-top: 10px;
+    height: 1.5em;
+}
+
+#explanation {
+    font-size: 1.1em;
+    margin-top: 10px;
+    color: #000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .quiz-container {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .option, #next-btn {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .quiz-container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.3em;
+    }
+
+    .option, #next-btn {
+        font-size: 0.8em;
+        padding: 8px;
+    }
+
+    #feedback, #explanation {
+        font-size: 1em;
+    }
+}

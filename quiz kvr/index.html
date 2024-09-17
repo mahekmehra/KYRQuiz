@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KYR QUIZ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container" id="quiz-container">
+        <h1>⚖️ KYR QUIZZ ⚖️</h1>
+        <h3>Become Aware !!!</h3>
+        <div class="question-container">
+            <p id="question">Question will appear here</p>
+        </div>
+        <div class="options">
+            <button class="option" id="option1" onclick="selectAnswer(1)">Option 1</button>
+            <button class="option" id="option2" onclick="selectAnswer(2)">Option 2</button>
+            <button class="option" id="option3" onclick="selectAnswer(3)">Option 3</button>
+            <button class="option" id="option4" onclick="selectAnswer(4)">Option 4</button>
+        </div>
+        <p id="feedback"></p>
+        <p id="explanation"></p>
+        <button id="next-btn" onclick="nextQuestion()">Next</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
